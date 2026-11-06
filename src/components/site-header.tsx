@@ -8,16 +8,19 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="absolute inset-x-0 top-0 z-10">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:px-10">
+    <header className="absolute inset-x-0 top-0 z-10 text-white">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:px-10 md:py-8">
         <a
           href="#top"
-          className="rounded-sm text-lg font-medium tracking-tight focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+          className="rounded-sm text-2xl font-normal tracking-tight focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:text-3xl"
         >
-          truly
+          Truly
         </a>
 
-        <nav aria-label="Primary" className="flex items-center gap-6 text-sm md:gap-8">
+        <nav
+          aria-label="Primary"
+          className="flex items-center gap-5 text-base font-normal md:gap-10 md:text-2xl"
+        >
           {links.map((link) => (
             <a
               key={link.label}
@@ -25,7 +28,7 @@ export function SiteHeader() {
               {...(link.external
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
-              className="rounded-sm text-foreground/80 transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+              className="rounded-sm transition-opacity hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >
               {link.label}
             </a>
