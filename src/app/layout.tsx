@@ -1,29 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "./ghosty.css";
 
 export const metadata: Metadata = {
-  title: "Truly — (truly) confidential perps",
+  title: "Ghosty: go ghost on any app",
   description:
-    "Fund every Lighter trade from Privacy Pools through a fresh owner address. One trade, one address, never reused.",
+    "Privacy wherever you are. Ghosty pays any app from your shielded balance through a private account. No new network, no new wallet.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="en" className="h-full antialiased">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Chakra+Petch:wght@600;700&family=Oxanium:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"
+        />
+        <link rel="icon" href="/ghosty/ghost.png" />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

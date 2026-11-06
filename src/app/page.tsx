@@ -1,17 +1,9 @@
-import { Hero } from "@/components/hero";
-import { HowItWorks } from "@/components/how-it-works";
-import { Privacy } from "@/components/privacy";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { GhostyLanding } from "@/components/ghosty-landing";
 
 export default function Home() {
   return (
-    <main id="top" className="relative flex min-h-screen flex-col">
-      <SiteHeader />
-      <Hero />
-      <HowItWorks />
-      <Privacy />
-      <SiteFooter />
+    <main id="top">
+      <GhostyLanding />
     </main>
   );
 }

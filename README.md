@@ -34,3 +34,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Ghosty landing page
+
+The site is a single page, `src/components/ghosty-landing.tsx`, styled by `src/app/ghosty.css` (Violet night theme). Images live in `public/ghosty/`: the ghost mascot (from the extension repo) and app logos in `public/ghosty/logos/`, taken from DefiLlama's open icon set (github.com/DefiLlama/icons). The logos belong to their projects and are shown to name apps Ghosty is built to work with.
+
+Fonts load from Google Fonts in `layout.tsx` (Unbounded, Chakra Petch, Oxanium, JetBrains Mono).
