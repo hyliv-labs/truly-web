@@ -2,7 +2,15 @@ const REPO_URL = "https://github.com/hyliv-labs/truly-extension";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen flex-col justify-center px-6 md:px-10">
+    <section className="isolate relative flex min-h-screen flex-col justify-center px-6 md:px-10">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+      >
+        <div className="absolute -right-[15%] -top-[20%] h-[80vh] w-[70vw] rounded-full bg-[radial-gradient(closest-side,var(--color-accent),transparent)] opacity-30 blur-3xl" />
+        <div className="absolute -bottom-[25%] left-[-10%] h-[60vh] w-[60vw] rounded-full bg-[radial-gradient(closest-side,var(--color-accent),transparent)] opacity-15 blur-3xl" />
+      </div>
+
       <div className="mx-auto w-full max-w-7xl">
         <h1 className="max-w-4xl text-5xl font-medium leading-[1.02] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <span className="text-muted">(truly)</span> confidential perps
