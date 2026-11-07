@@ -35,10 +35,6 @@
 .gx-band { position: relative; padding: 40px 28px 110px; text-align: center; }
 .gx-footer { position: relative; padding: 26px 28px; }
 .gx-lead { margin: 0; font-size: 19px; line-height: 1.5; color: var(--gx-body); }
-.gx-install { counter-reset: gx-step; margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; max-width: 34em; }
-.gx-install li { font-size: 13px; line-height: 1.4; color: var(--gx-muted); }
-.gx-install li::before { content: counter(gx-step) ". "; counter-increment: gx-step; color: var(--gx-acc); font-family: "JetBrains Mono", ui-monospace, monospace; }
-
 /* Partner strip at the bottom of the hero */
 .gx-partners { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 18px 36px; padding: 20px 28px 26px; border-top: 1px solid var(--gx-line); background: var(--gx-bg); }
 .gx-partner { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--gx-body); }

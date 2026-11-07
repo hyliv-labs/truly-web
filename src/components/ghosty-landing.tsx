@@ -226,12 +226,6 @@ export function GhostyLanding() {
             <h1 className="gx-h1 gx-display gx-glitch">Go ghost on any app.</h1>
             <p className="gx-lead">Privacy wherever you are. One widget, any app.</p>
             <a className="gx-cta" href={DOWNLOAD_URL} style={{ alignSelf: "flex-start", fontSize: 16, padding: "14px 26px" }}>Get Ghosty</a>
-            <ol className="gx-install">
-              <li>Download the zip and unzip it</li>
-              <li>Open chrome://extensions</li>
-              <li>Turn on Developer mode</li>
-              <li>Load unpacked, then choose the folder</li>
-            </ol>
           </div>
 
           <div ref={stageRef} className="gx-stage">
