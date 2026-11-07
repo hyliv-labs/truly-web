@@ -222,7 +222,7 @@ export function GhostyLanding() {
         <div className="gx-hero-grid gx-wrap">
           <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
             <h1 className="gx-h1 gx-display gx-glitch">Go ghost on any app.</h1>
-            <p style={{ margin: 0, fontSize: 19, lineHeight: 1.5, color: "var(--gx-body)" }}>Privacy wherever you are. One widget, any app.</p>
+            <p className="gx-lead">Privacy wherever you are. One widget, any app.</p>
             <a className="gx-cta" href={REPO_URL} target="_blank" rel="noopener noreferrer" style={{ alignSelf: "flex-start", fontSize: 16, padding: "14px 26px" }}>Get Ghosty</a>
           </div>
 
@@ -277,9 +277,22 @@ export function GhostyLanding() {
           </div>
         </div>
         <p className="gx-hint">Every amount that drifts past the line gets shielded. So does anything your cursor touches.</p>
+
+        <div className="gx-partners">
+          <div className="gx-partner">
+            <span className="gx-partner-cap">Built on Ethereum</span>
+            <img className="gx-partner-ef" src="/logos/ef-foundation-white.png" alt="Ethereum Foundation" />
+          </div>
+          <span className="gx-partner-sep" aria-hidden="true" />
+          <div className="gx-partner">
+            <span className="gx-partner-cap">Live on</span>
+            <img className="gx-partner-uni" src="/ghosty/logos/logo-uniswap.png" alt="" />
+            <span>Uniswap</span>
+          </div>
+        </div>
       </section>
 
-      <section id="apps" style={{ position: "relative", padding: "70px 28px 90px" }}>
+      <section id="apps" className="gx-section">
         <div className="gx-wrap" style={{ display: "flex", flexDirection: "column", gap: 36 }}>
           <div className="gx-apps-head">
             <h2 className="gx-section-title" style={{ maxWidth: "13em" }}>Anonymity mode, on the apps you already use.</h2>
@@ -366,7 +379,7 @@ export function GhostyLanding() {
         </div>
       </section>
 
-      <section id="trust" style={{ position: "relative", padding: "70px 28px 90px" }}>
+      <section id="trust" className="gx-section">
         <div className="gx-wrap" style={{ display: "flex", flexDirection: "column", gap: 38 }}>
           <h2 className="gx-section-title">No one to trust. Including us.</h2>
           <div className="gx-trust">
@@ -394,7 +407,7 @@ export function GhostyLanding() {
         </div>
       </section>
 
-      <section style={{ position: "relative", padding: "40px 28px 110px", textAlign: "center" }}>
+      <section className="gx-band">
         <div style={{ maxWidth: 820, margin: "0 auto", display: "flex", flexDirection: "column", alignItems: "center", gap: 22 }}>
           <img className="gx-bob" src="/ghosty/ghost.png" alt="" width={120} height={120} />
           <h2 className="gx-display gx-glitch" style={{ margin: 0, fontSize: "clamp(40px, 5.6vw, 72px)", lineHeight: 1 }}>Go ghost.</h2>
@@ -402,7 +415,7 @@ export function GhostyLanding() {
         </div>
       </section>
 
-      <footer style={{ position: "relative", padding: "26px 28px" }}>
+      <footer className="gx-footer">
         <div className="gx-wrap" style={{ display: "flex", justifyContent: "space-between", gap: 20, flexWrap: "wrap", fontSize: 13, color: "var(--gx-muted)" }}>
           <span>Ghosty by Hyliv Labs. Early build, not production ready.</span>
           <a href={REPO_URL} target="_blank" rel="noopener noreferrer" style={{ color: "var(--gx-body)" }}>Source on GitHub</a>
