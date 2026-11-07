@@ -279,13 +279,9 @@ export function GhostyLanding() {
         <p className="gx-hint">Every amount that drifts past the line gets shielded. So does anything your cursor touches.</p>
 
         <div className="gx-partners">
-          <div className="gx-partner">
-            <span className="gx-partner-cap">Built on Ethereum</span>
-            <img className="gx-partner-ef" src="/logos/ef-foundation-white.png" alt="Ethereum Foundation" />
-          </div>
+          <img className="gx-partner-ef" src="/logos/ef-foundation-white.png" alt="Ethereum Foundation" />
           <span className="gx-partner-sep" aria-hidden="true" />
           <div className="gx-partner">
-            <span className="gx-partner-cap">Live on</span>
             <img className="gx-partner-uni" src="/ghosty/logos/logo-uniswap.png" alt="" />
             <span>Uniswap</span>
           </div>

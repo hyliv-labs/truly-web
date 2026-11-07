@@ -40,10 +40,9 @@
 .gx-partners { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 18px 36px; padding: 20px 28px 26px; border-top: 1px solid var(--gx-line); background: var(--gx-bg); }
 .gx-partner { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--gx-body); }
 .gx-partner img { display: block; }
-.gx-partner .gx-partner-ef { height: 30px; width: auto; }
+.gx-partner-ef { display: block; height: 30px; width: auto; }
 .gx-partner .gx-partner-uni { width: 30px; height: 30px; border-radius: 8px; }
-.gx-partner-cap { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gx-muted); }
-.gx-partner-sep { width: 1px; height: 28px; background: var(--gx-line2); }
+.gx-partner-sep { display: block; width: 1px; height: 30px; background: rgba(242, 240, 247, 0.35); }
 .gx-glow-a, .gx-glow-b { position: absolute; pointer-events: none; height: 900px; }
 .gx-glow-a { left: -12%; top: 760px; width: 62%; background: radial-gradient(closest-side, rgba(126, 92, 255, 0.12), transparent); }
 .gx-glow-b { right: -15%; top: 1500px; width: 60%; background: radial-gradient(closest-side, rgba(198, 255, 61, 0.055), transparent); }
@@ -178,7 +177,6 @@
   .gx-ghost { right: 0; }
   .gx-hint { padding: 0 20px; }
   .gx-partners { padding: 18px 20px 22px; gap: 16px 24px; }
-  .gx-partner-sep { display: none; }
   .gx-section { padding: 56px 20px 72px; }
   .gx-band { padding: 24px 20px 80px; }
   .gx-footer { padding: 22px 20px; }
