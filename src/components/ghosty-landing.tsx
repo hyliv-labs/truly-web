@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const REPO_URL = "https://github.com/hyliv-labs/truly-extension";
+const REPO_URL = "https://github.com/hyliv-labs/ghosty-extension";
 const DOWNLOAD_URL =
-  "https://github.com/hyliv-labs/truly-extension/releases/download/v0.0.2/truly-extension-v0.0.2-chrome.zip";
+  "https://github.com/hyliv-labs/ghosty-extension/releases/download/v0.1.0/truly-extension-v0.1.0-chrome.zip";
 
 const C = {
   acc: "#c6ff3d",
