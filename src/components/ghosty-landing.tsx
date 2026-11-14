@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const REPO_URL = "https://github.com/hyliv-labs/ghosty-extension";
 const DOWNLOAD_URL =
-  "https://github.com/hyliv-labs/ghosty-extension/releases/download/v0.1.1/ghosty-extension-v0.1.1-chrome.zip";
+  "https://github.com/hyliv-labs/ghosty-extension/releases/download/v0.1.2/ghosty-extension-v0.1.2-chrome.zip";
 
 const C = {
   acc: "#c6ff3d",
